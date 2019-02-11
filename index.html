@@ -1,288 +1,383 @@
+<!--https://github.com/Woodehh/social-buttons-->
+
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Tsumiki's</title>
+  <title>Tsumiki's</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/modern-business.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
 
-  </head>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+-->
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
 
-  <body>
+  <!-- Social button -->
+  <link href="bootstrap-social.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/brands.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/fontawesome.css">
 
-    <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">積木's Website</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Portfolio
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Blog
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-                <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-                <a class="dropdown-item" href="blog-post.html">Blog Post</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Other Pages
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-                <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-                <a class="dropdown-item" href="faq.html">FAQ</a>
-                <a class="dropdown-item" href="404.html">404</a>
-                <a class="dropdown-item" href="pricing.html">Pricing Table</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  <style class="cp-pen-styles">
+    .bouton-image:before {
+      content: "";
+      width: 128px;
+      height: 64px;
+      display: inline-block;
+      margin-right: 5px;
+      vertical-align: text-bottom;
+      background-color: transparent;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
 
-    <header>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('pic.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Coding Angels</h3>
-              <p>DigiGirlz IoT</p>
-            </div>
-          </div>
-          <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('pic2.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Coding Angels</h3>
-              <p>Azure Machine Learning Bootcamp</p>
-            </div>
-          </div>
-          <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('pic3.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>XR Hack Fest</h3>
-              <p>VR、AR、MR開發競賽</p>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </header>
+    .monBouton:before {
+      background-image: url("dog2.png");
+    }
+  </style>
+</head>
 
-    <!-- Page Content -->
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
+      <a class="navbar-brand" href="index.html">積木's Website</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Portfolio
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+              <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
+              <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
+              <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
+              <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
+              <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Blog
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
+              <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
+              <a class="dropdown-item" href="blog-post.html">Blog Post</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Other Pages
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a class="dropdown-item" href="full-width.html">Full Width Page</a>
+              <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
+              <a class="dropdown-item" href="faq.html">FAQ</a>
+              <a class="dropdown-item" href="404.html">404</a>
+              <a class="dropdown-item" href="pricing.html">Pricing Table</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-      <h1 class="my-4">關於我</h1>
-
-      <!-- Marketing Icons Section -->
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url('pic.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Coding Angels</h3>
+            <p>DigiGirlz IoT</p>
+          </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('pic2.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Coding Angels</h3>
+            <p>Azure Machine Learning Bootcamp</p>
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('pic3.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>XR Hack Fest</h3>
+            <p>VR、AR、MR開發競賽</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </header>
+  <div class="fixed-bottom">
+    <ul class="nav justify-content-end">
       <div class="row">
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100">
-            <h4 class="card-header">社會參與</h4>
-            <div class="card-body">
-              <p class="card-text">‎2018推動大學程式教育Web分項‎教材製作<br/>TSGDF臺灣學生遊戲開發者論壇<br/>尼泊爾偏鄉資訊教育推廣<br/>大學社團:<br/>YZU資訊社ITAC美宣長</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Learn More</a>
-            </div>
-          </div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col">
+          <button class="btn btn-outline-info bouton-image monBouton" data-toggle="popover" data-placement="top" title="積木有在關注哪些Youtuber?" data-content="呱吉、理科太太、滴妹...">小關注:)</button>
+          <a href="https://www.facebook.com/profile.php?id=100012187294777" class="sb sb-facebook sb-m-2 sb-fw">My Facebook</a>
+          <a href="https://www.youtube.com/channel/UC-P3Iwy5jQBxHFVsir9fjwQ" class="sb sb-youtube sb-m-2 sb-fw">My YouTube</a>
+          <a href="https://github.com/tsumikihuang" class="sb sb-github sb-m-2 sb-fw">My Github</a>
         </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100">
-            <h4 class="card-header">就業經歷</h4>
-            <div class="card-body">
-              <p class="card-text">打工:<br/>陳明峰數理補習班3年<br/></p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Learn More</a>
-            </div>
+      </div>
+    </ul>
+  </div>
+
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <h2 class="my-4">關於我</h2>
+
+    <!-- Marketing Icons Section -->
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header">社會參與</h4>
+          <div class="card-body">
+            <p class="card-text">‎2018推動大學程式教育Web分項‎教材製作
+              <br/>TSGDF臺灣學生遊戲開發者論壇
+              <br/>尼泊爾偏鄉資訊教育推廣
+              <br/>大學社團:
+              <br/>YZU資訊社ITAC美宣長</p>
           </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100">
-            <h4 class="card-header">涉略領域</h4>
-            <div class="card-body">
-              <p class="card-text">撰寫語言:C++、C#、JAVA、JS、Python<br/>接觸領域:WebGL、AR、VR、ML</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Learn More</a>
-            </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn More</a>
           </div>
         </div>
       </div>
-      <!-- /.row -->
-
-      <!-- Portfolio Section -->
-      <h2>作品集概覽</h2>
-
-      <div class="row">
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="project1.png" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="https://github.com/tsumikihuang/VR_YZU_JP_CLASS">語言練習VR教室</a>
-              </h4>
-              <p class="card-text">校內計畫「落實教學創新及提升教學品質」之一專案<br/>為提升日文系同學在口說方面的不足，製作"語言練習VR教室"，以VR沉浸式情境練習，加上Google語音評分機制<br/>在Unity上用Cardboard實作<br/>(大二下到大三上)</p>
-            </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header">就業經歷</h4>
+          <div class="card-body">
+            <p class="card-text">打工:
+              <br/>陳明峰數理補習班3年
+              <br/>
+            </p>
           </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="project2.png" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">FB自動發文互動工具</a>
-              </h4>
-              <p class="card-text">為一位藝設系的同學合作製作一互動裝置<br/>在Unity上用FB API實作<br/>(大三上)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="project3.png" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="https://github.com/tsumikihuang/AR-Escape-Room-APP">AR密室逃脫APP</a>
-              </h4>
-              <p class="card-text">校內資工系上Java課程期末專題<br/>在Android Studio上用Vuforia + Tango設備實作<br/>(高二上)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="project4.png" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="https://github.com/tsumikihuang/XRcompetition-vive">XR競賽作品</a>
-              </h4>
-              <p class="card-text">2018年7月27-29日<br/>參加XR Hack Fest / XR 開發者黑客松大賽<br/>作品為一劇情故事體驗，在Unity上用HTC Vive實作<br/>(大二升大三的暑假)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="project5.png" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">AI Car</a>
-              </h4>
-              <p class="card-text">在不同環境下AI操控車子前後和左右旋轉，抵達目標<br/>在Unity上用ML-Agent實作<br/>(大三上)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">JavaScript教材</a>
-              </h4>
-              <p class="card-text">教育部推動大學程式教育<br/>我們團隊負責其中的Web分項，目標為製作適合會計系使用的JavaScript教材<br/>FB粉專:https://www.facebook.com/PLUS.university/<br/>(大三)</p>
-            </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn More</a>
           </div>
         </div>
       </div>
-      <!-- /.row -->
-
-      <!-- Features Section -->
-      <div class="row">
-        <div class="col-lg-6">
-          <h2>Modern Business Features</h2>
-          <p>The Modern Business template by Start Bootstrap includes:</p>
-          <ul>
-            <li>
-              <strong>Bootstrap v4</strong>
-            </li>
-            <li>jQuery</li>
-            <li>Font Awesome</li>
-            <li>Working contact form with validation</li>
-            <li>Unstyled page elements for easy customization</li>
-          </ul>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
-        </div>
-        <div class="col-lg-6">
-          <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header">涉略領域</h4>
+          <div class="card-body">
+            <p class="card-text">撰寫語言:C++、C#、JAVA、JS、Python
+              <br/>接觸領域:WebGL、AR、VR、ML</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
         </div>
       </div>
-      <!-- /.row -->
+    </div>
+    <!-- /.row -->
 
-      <hr>
+    <!-- Portfolio Section -->
+    <h2>作品集概覽</h2>
 
-      <!-- Call to Action Section -->
-      <div class="row mb-4">
-        <div class="col-md-8">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
-        </div>
-        <div class="col-md-4">
-          <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#">
+            <img class="card-img-top" src="project1.png" alt="">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="https://github.com/tsumikihuang/VR_YZU_JP_CLASS">語言練習VR教室</a>
+            </h4>
+            <p class="card-text">校內計畫「落實教學創新及提升教學品質」之一專案
+              <br/>為提升日文系同學在口說方面的不足，製作"語言練習VR教室"，以VR沉浸式情境練習，加上Google語音評分機制
+              <br/>在Unity上用Cardboard實作
+              <br/>(大二下到大三上)</p>
+          </div>
         </div>
       </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#">
+            <img class="card-img-top" src="project2.png" alt="">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">FB自動發文互動工具</a>
+            </h4>
+            <p class="card-text">為一位藝設系的同學合作製作一互動裝置
+              <br/>在Unity上用FB API實作
+              <br/>(大三上)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#">
+            <img class="card-img-top" src="project3.png" alt="">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="https://github.com/tsumikihuang/AR-Escape-Room-APP">AR密室逃脫APP</a>
+            </h4>
+            <p class="card-text">校內資工系上Java課程期末專題
+              <br/>在Android Studio上用Vuforia + Tango設備實作
+              <br/>(高二上)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#">
+            <img class="card-img-top" src="project4.png" alt="">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="https://github.com/tsumikihuang/XRcompetition-vive">XR競賽作品</a>
+            </h4>
+            <p class="card-text">2018年7月27-29日
+              <br/>參加XR Hack Fest / XR 開發者黑客松大賽
+              <br/>作品為一劇情故事體驗，在Unity上用HTC Vive實作
+              <br/>(大二升大三的暑假)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#">
+            <img class="card-img-top" src="project5.png" alt="">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">AI Car</a>
+            </h4>
+            <p class="card-text">在不同環境下AI操控車子前後和左右旋轉，抵達目標
+              <br/>在Unity上用ML-Agent實作
+              <br/>(大三上)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#">
+            <img class="card-img-top" src="http://placehold.it/700x400" alt="">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">JavaScript教材</a>
+            </h4>
+            <p class="card-text">教育部推動大學程式教育
+              <br/>我們團隊負責其中的Web分項，目標為製作適合會計系使用的JavaScript教材
+              <br/>FB粉專:https://www.facebook.com/PLUS.university/
+              <br/>(大三)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
 
+    <!-- Features Section -->
+    <div class="row">
+      <div class="col-lg-6">
+        <h2>Modern Business Features</h2>
+        <p>The Modern Business template by Start Bootstrap includes:</p>
+        <ul>
+          <li>
+            <strong>Bootstrap v4</strong>
+          </li>
+          <li>jQuery</li>
+          <li>Font Awesome</li>
+          <li>Working contact form with validation</li>
+          <li>Unstyled page elements for easy customization</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam
+          totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+      </div>
+      <div class="col-lg-6">
+        <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Call to Action Section -->
+    <div class="row mb-4">
+      <div class="col-md-8">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae
+          veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+      </div>
+      <div class="col-md-4">
+        <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
+      </div>
+    </div>
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
     </div>
     <!-- /.container -->
+  </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+  </script>
 
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
-      </div>
-      <!-- /.container -->
-    </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  </body>
+</body>
 
 </html>
