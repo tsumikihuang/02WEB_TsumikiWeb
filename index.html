@@ -26,7 +26,8 @@
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
     crossorigin="anonymous"></script>
--->
+  -->
+
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
 
@@ -52,10 +53,24 @@
       background-image: url("dog2.png");
     }
   </style>
+  <script>
+    function random_pop() {
+      let pop_sth = [];
+      pop_sth[0] = ["有在關注哪些Youtuber?", "很多耶，例如呱吉、理科太太、滴妹、啾啾鞋、冏星人、Howfun、上班不要看..."];
+      pop_sth[1] = ["給茫然的你，一個座右銘", "重要的不是你站在哪裡，而是你朝向哪裡"];
+      pop_sth[2] = ["給躊躇的你，一個座右銘", "對的事，做就對了"];
+      pop_sth[3] = ["做甚麼事很簡單就可以獲得成就感", "捐血"];
+      pop_sth[4] = ["你有甚麼夢想", "40歲前，存到2000萬元，必定開一間貓咪咖啡廳，並且和流浪動物之家合作，讓咖啡廳成為中途之家"];
+      pop_sth[5] = ["平日都在想甚麼?", "等我40歲後存到2000萬元，我就要退休"];
+
+      index = Math.floor(Math.random() * pop_sth.length);
+
+      return pop_sth[index];
+    }
+  </script>
 </head>
 
 <body>
-
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
@@ -89,12 +104,12 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                分類搜尋
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="filter_works.html">作品</a>
-                <a class="dropdown-item" href="blog-home-2.html">社會參與</a>
-                <a class="dropdown-item" href="blog-post.html">工作經歷</a>
+              分類搜尋
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a class="dropdown-item" href="filter_works.html">作品</a>
+              <a class="dropdown-item" href="blog-home-2.html">社會參與</a>
+              <a class="dropdown-item" href="blog-post.html">工作經歷</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -161,7 +176,8 @@
         <div class="col"></div>
         <div class="col"></div>
         <div class="col">
-          <button class="btn btn-outline-info bouton-image monBouton" data-toggle="popover" data-placement="top" title="積木有在關注哪些Youtuber?" data-content="呱吉、理科太太、滴妹...">小關注:)</button>
+          <button id="change_btn" class="btn btn-outline-info bouton-image monBouton" data-toggle="popover" data-placement="top" data-original-title="再點我一次"
+            data-content="讓我回答問題">小關注:)</button>
           <a href="https://www.facebook.com/profile.php?id=100012187294777" class="sb sb-facebook sb-m-2 sb-fw">My Facebook</a>
           <a href="https://www.youtube.com/channel/UC-P3Iwy5jQBxHFVsir9fjwQ" class="sb sb-youtube sb-m-2 sb-fw">My YouTube</a>
           <a href="https://github.com/tsumikihuang" class="sb sb-github sb-m-2 sb-fw">My Github</a>
@@ -174,7 +190,13 @@
   <!-- Page Content -->
   <div class="container">
 
-    <h2 class="my-4">關於我</h2>
+    <h2 class="my-4"></h2>
+
+    <div class="text-center">
+      <button type="button" class="btn btn-outline-success">第一次來? 先來看看本網站的服用手冊</button>
+    </div>
+    
+    <h2 class="my-4"></h2>
 
     <!-- Marketing Icons Section -->
     <div class="row">
@@ -228,7 +250,7 @@
     <div class="row">
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="#">
+          <a href="https://github.com/tsumikihuang/VR_YZU_JP_CLASS">
             <img class="card-img-top" src="project1.png" alt="">
           </a>
           <div class="card-body">
@@ -259,7 +281,7 @@
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="#">
+          <a href="https://github.com/tsumikihuang/AR-Escape-Room-APP">
             <img class="card-img-top" src="project3.png" alt="">
           </a>
           <div class="card-body">
@@ -274,7 +296,7 @@
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="#">
+          <a href="https://github.com/tsumikihuang/XRcompetition-vive">
             <img class="card-img-top" src="project4.png" alt="">
           </a>
           <div class="card-body">
@@ -357,7 +379,6 @@
         <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
       </div>
     </div>
-
   </div>
   <!-- /.container -->
 
@@ -372,11 +393,13 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script>
-    $(function () {
-      $('[data-toggle="popover"]').popover()
-    })
-  </script>
+    $("#change_btn").popover().click(function () {
+      gotcha = random_pop();
+      $(this).attr('data-original-title', gotcha[0]);
+      $(this).attr('data-content', gotcha[1]);
+    });
 
+  </script>
 
 </body>
 
