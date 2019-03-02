@@ -32,7 +32,7 @@
   text-align: center;
 }
 .sb.sb-fw {
-  width: 220px;
+  width: 42px; /*220*/
 }
 .sb.sb-m-2 {
   margin-top: 2px;
