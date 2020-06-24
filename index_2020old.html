@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<!--https://github.com/Woodehh/social-buttons-->
+
+<html lang="zh-Hant-TW">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="dog(line)_small.png">
+
+  <title>黃莉婷</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  -->
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+  <link href="css/resume.css" rel="stylesheet">
+  <link href="bootstrap-social.css" rel="stylesheet">
+  <link href="carousel.css" rel="stylesheet">
+
+  <!-- Social button -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/brands.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/fontawesome.css">
+
+  <style class="cp-pen-styles">
+    .bouton-image:before {
+      content: "";
+      width: 128px;
+      height: 64px;
+      display: inline-block;
+      margin-right: 5px;
+      vertical-align: text-bottom;
+      background-color: transparent;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    .monBouton::before {
+      background-image: url("dog(small).png");
+    }
+  </style>
+  <script>
+    function random_pop() {
+      let pop_sth = [];
+      pop_sth[0] = ["有在關注哪些Youtuber?", "很多耶，例如呱吉、理科太太、滴妹、啾啾鞋、冏星人、Howfun、上班不要看..."];
+      pop_sth[1] = ["給茫然的你，一個座右銘", "重要的不是你站在哪裡，而是你朝向哪裡"];
+      pop_sth[2] = ["給躊躇的你，一個座右銘", "對的事，做就對了"];
+      pop_sth[3] = ["做甚麼事很簡單就可以獲得成就感", "捐血，來來來大家一起來捐血"];
+      pop_sth[4] = ["你有甚麼夢想", "40歲前，存到2000萬元，必定開一間貓咪咖啡廳，並且和流浪動物之家合作，讓咖啡廳成為中途之家"];
+      pop_sth[5] = ["平日都在想甚麼?", "等我40歲後存到2000萬元，我就要退休"];
+      //pop_sth[6] = ["你為甚麼叫積木?", "因為我的日文名叫つみき ，翻譯成中文就是積木"];
+      //pop_sth[7] = ["平常都聽甚麼歌?", "我雜食性，甚麼都聽，比較常聽的有五月天、Kurt Hugo Schneider和DECO*27的歌"];
+      pop_sth[6] = ["講個笑話來聽聽", "我們都知道3大於2，但小明一直無法理解，於是他要證明3比2小。他把這件事告訴好友小華，小華問他「要怎麼證明?」，小明說「跟我來」，於是把小華帶到了公園。公園裡有幾位流浪漢，小明便走到了流浪漢面前不發一語地伸出食指和中指比了'耶'的手勢，怒得流浪漢嗆他「比三小」。"]
+      //pop_sth[9] = ["你最嚮往怎麼樣的生活?", "一人多貓的獨居生活"];
+      //pop_sth[10] = ["你有甚麼個人特色?", "門牙只有1.5顆<3"];
+      //pop_sth[11] = ["有討厭吃的食物嗎?", "鳳梨，是個來自黑暗世界會咬舌頭的有毒果實"];
+      //pop_sth[12] = ["小時候的夢想是甚麼?", "家裡有一堆貓，床上全都是貓，然後早上最幸福的就是被貓叫醒。現在依舊是我的夢想"];
+      index = Math.floor(Math.random() * pop_sth.length);
+
+      return pop_sth[index];
+    }
+  </script>
+</head>
+
+<body id="top">
+  <script>
+        /*
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">積木's Website</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">關於積木</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="future_plain.html">未來規劃</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">聯絡我</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              分類搜尋
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a class="dropdown-item" href="filter_works.html">作品</a>
+              <!--<a class="dropdown-item" href="filter_community.html">社會參與</a>-->
+              <a class="dropdown-item" href="filter_job.html">工作經歷</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              languages
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a class="dropdown-item" href="index.html">繁體中文</a>
+              <a class="dropdown-item" href="index_en.html">English</a>
+              <a class="dropdown-item" href="index_jp.html">日本語</a>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  */
+  </script>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">黃莉婷</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="my_photo.jpg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#top">活動照片</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">關於我</a>
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#youandme">我和微軟</a>
+        </li>-->
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">經歷</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#active">Coding活動</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#works_filter">作品列表</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#works_overview">作品概覽</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#awards">獎狀/證書</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url('pic.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 style="font-size:4rem; color: rgba(0, 0, 0, 0.582); font-weight: 800;">Microsoft Coding Angles</h1>
+          </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('pic2.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 style="font-size:4rem; color: rgba(0, 0, 0, 0.582); font-weight: 800;">ARVR教育應用創作競賽</h1>
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('pic3.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 style="font-size:4rem; color: rgba(255, 255, 255, 0.733); font-weight: 800;">XR開發者黑客松大賽</h1>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </header>
+  <div class="fixed-bottom">
+    <div class="row">
+      <div class="col align-self-end" align="right">
+        <a href="https://www.facebook.com/profile.php?id=100012187294777" target="_blank" class="sb sb-facebook sb-fw sb-br-10"></a>
+        <a href="https://www.youtube.com/channel/UC-P3Iwy5jQBxHFVsir9fjwQ" target="_blank" class="sb sb-youtube sb-fw sb-br-10"></a>
+        <a href="https://github.com/tsumikihuang" target="_blank" class="sb sb-github sb-fw sb-br-10"></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col align-self-end" align="right">
+        <!--<script>
+            (function () {
+              var cx = '015012264423711515279:rqem_9e5irq';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+            })();
+          </script>
+          <gcse:search></gcse:search>-->
+        <button id="change_btn" class="btn btn-outline-info bouton-image monBouton" data-toggle="popover" data-placement="top" data-original-title="點我點我"
+          data-content="打發時間，來回答一些無聊的問題">小關注:)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0" style="font-size:6rem;">黃
+          <span class="text-primary">莉婷</span>
+        </h1>
+        <div class="subheading mb-5">元智大學 · 資訊工程學系 · 0972110865 · s2s4s6s8s2s4s6s8@gmail.com</div>
+        <p class="lead">喜歡接觸各個領域的科技，做過網頁、APP、AR、VR作品。目前主要研究機器學習，包括機器視覺、深度學習和Unity Shader(電腦圖學)。</p>
+        <p class="lead">對自己的要求是勇於付出，決定要做甚麼就盡全力做到好。</p>
+        <p class="lead">寫程式亦然，若發現有更好的做法，也願意花時間把它做好。舉例，</br>過去專案「語言練習VR教室」早已結案，但由於正式上線的過程中，發現有些功能對使用者不太友善，雖然不在本分內，但我希望這個成品最後是有用且好用的，因此願意耗時修改。</p>
+
+      </div>
+    </section>
+
+    <hr class="featurette-divider" id="youandme">
+<!--
+    <section class="resume-section p-3 p-lg-5 d-flex">
+      <div class="w-100">
+        <h1 class="mt-4 mb-3">我和微軟</h1>
+        <p>在過去一次微軟的演講中聽到一句最印象深刻的話，它和我個人的價值觀十分相似。</p>
+        <div class="card">
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>你加入微軟，不是為了讓自己變酷，而是為了幫助他人變酷。</p>
+              <footer class="blockquote-footer">微軟執行長Satya Nadella</footer>
+            </blockquote>
+          </div>
+        </div>
+        <p>
+          </br>
+          <h5>我喜歡提升自己高度，更樂於幫助別人成為更好的人。</h5>
+          從我做的決定中看出：</br>
+          <lu>
+            <li>大一時，加入國際志工活動，為的是希望透過自己的資訊專長，到尼泊爾偏鄉授課(電腦資訊課)，用資訊使他們的生活變得更好。</br>
+            </li>
+            <li>參加登山社是為了讓自己更好，當上幹部是為了讓學弟妹們覺得加入了山社，有因此學到更多技能，使自己變得更好。</br>
+            </li>
+          </lu>
+          </br>
+          從那之後我更積極地參與微軟的相關活動，像是DigiGirl、分享會...等。(在後面的
+          <a href="#active">Coding活動</a>中會再提到)</br>
+        </p>
+        <p>很感謝微軟對於女性工程師的支持，讓更多女性朋友更有自信地爭取RD職位。
+        </p>
+      </div>
+    </section>
+    -->
+    <!--**************************************************************************-->
+    <!--**************************************************************************-->
+    <!--**************************************************************************-->
+    <!--**************************************************************************-->
+    <!--**************************************************************************-->
+    <h1 class="mt-4 mb-3" id="experience">經歷</h1>
+
+    <div class="row">
+
+      <div class="col-lg-4">
+        <img src="./head/itac.jpg" class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+          alt="Generic placeholder image" width="140" height="140">
+        <h2>ITAC 公關長</h2>
+        <p class="text-dark">擔任第4屆公關長。負責管理ITAC FB粉絲專頁，推廣課程資訊與活動美宣擔當。在這打好Git、JQuery基礎，網頁設計前後端都好上手。</p>
+        <p class="text-secondary">
+          <a href="https://www.facebook.com/yzuitac/" target="_blank">
+            Information Technology Association Club (ITAC)</a> 是一個專門研究資訊相關技術的社團，會有專人設計課程、每學期聘請資訊界的高手來指導大家。社課內容多樣，凡舉JS、Java、R、Git、Linux...等皆是熱門課程。指導老師為TonyQ。</p>
+      </div>
+
+      <div class="col-lg-4">
+        <img src="./head/imsofa.jpg" class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+          alt="Generic placeholder image" width="140" height="140">
+        <h2>IMSOFA 實習小隊長</h2>
+        <p class="text-dark">大二下和IMSOFA成員共三人組隊參與
+          <a href="三寶企劃書.pdf" target="_blank">三寶雷達計劃</a>。預計大四上成為IMSOFA小隊長，協助lab事務、計劃執行、課程安排、人手培育。</p>
+        <p class="text-secondary">
+          <a href="https://www.facebook.com/imsofa.rocks/" target="_blank">IMSOFA</a>
+          不同於多數社團/實驗室/教派，沙發的成員很少被設定特別的任務，每周安排一個主題，跟大家分享一些技術上的所得，有時會一起參加有趣的計劃、競賽。</p>
+      </div>
+
+      <div class="col-lg-4">
+        <img src="./head/尼.jpg" class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+          alt="Generic placeholder image" width="140" height="140">
+        <h2>尼泊爾國際志工團</h2>
+        <h2>課程長</h2>
+        <p class="text-dark">擔任第十屆課程長，負責規劃在尼泊爾進行的
+          <h style="font-weight:bold;">電腦教育課程</h>。團隊共7人，出團前獲得
+          <h style="font-weight:bold;">台灣Asus</h>資助20台筆電，讓我們攜帶渡海到尼泊爾建置電腦教室。獲獎競賽有-
+          <h style="font-weight:bold;">106青年海外工作和平競賽、青年海外和平工作團隊競賽</h>，曾上
+          <h style="font-weight:bold;">雜誌今週刊、廣播節目青年轉動全球</h>(FM101.70)。
+          <a href="泊樂圓夢_結案書.pdf" target="_blank">
+            結案書</a>
+        </p>
+        <p class="text-secondary">
+          <a href="https://www.facebook.com/YZUNEPAL/" target="_blank">
+            元智大學尼泊爾國際志工團</a>於2008年深耕尼泊爾，致力於降低當地數位落差，並輔以其他服務計畫以符合當地真正需求。2017年已邁入第10年。</p>
+      </div>
+
+      <div class="col-lg-4">
+        <img src="./head/山.jpg" class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+          alt="Generic placeholder image" width="140" height="140">
+        <h2>YZMC 嚮導/副醫療長</h2>
+        <p class="text-dark">大二擔任第27屆嚮導長/大三擔任28屆副醫療長。負責舉辦學年度初級嚮導營(3天2夜登山活動)和中級嚮導營(4天3夜登山活動)，我們宣導登山知識，盡責照顧團員，在登山過程中分享登山故事，用合適的速度體驗大自然的美好。</br>爬過玉山、合歡山、奇萊南華、阿里山眠月線、海鼠山...等。從登山學習互助、重新認識自己。</p>
+        <p class="text-secondary">
+          <a href="https://www.facebook.com/YzmcYuanZhiDengShanShe/" target="_blank">
+            元智登山社Yuen Ze Mountain Climbing Club(YZMC)</a>一群熱愛登山、熱愛溯溪，更有許多熱愛凝聚彼此一同走向大自然的夥伴。</p>
+      </div>
+
+      <div class="col-lg-4">
+        <img src="./head/數.jpg" class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+          alt="Generic placeholder image" width="140" height="140">
+        <h2>陳明峰數理補習班</h2>
+        <h2>輔導老師</h2>
+        <p class="text-dark">
+          大一開始任職，擔任小四到高三數學、物理、化學輔導老師，近一年不時講授高二數學班。預計大四成為實習授課老師。
+          </br>在這段期間，我學會如何清楚傳遞腦內的想法和概念。與學生們互動的同時也深刻體會到新世代成長的快速、教育體系的改變、程式語言的普及、創新的想法等，不得不感慨未來孩子會越來越聰明，而我們又能從中學習到多少。
+        </p>
+        <p class="text-secondary">陳明峰數理補習班，位於桃園市中壢區。從小四到高三皆有開班，重視學生基礎觀念的建立。</p>
+      </div>
+    </div>
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="active">
+      <div class="w-100">
+        <h1 class="mt-4 mb-3">Coding活動</h1>
+        <lu>
+          <!--
+          <h2>微軟相關</h2>
+          <li>2017年12月09日，Coding Angels---Azure Machine Learning Bootcamp!</li>
+          <li>2018年12年08日，微軟DigiGirlz IoT workshop</li>
+          <li>2019年01月24日，台灣微軟RD微鐵粉分享會</li>
+          <li>2019年03月06日，台灣微軟未來生涯體驗校園講座【To be the NEXT】_【元智大學場】</li>
+          <li>2019年03月10日，Coding Angels下午場 【AI浪潮下的科技女力】</li>
+          </br>-->
+          <h2>曾參與</h2>
+          <li>2017年12月08日，
+            <a href="http://140.127.218.70/laws" target="_blank">開源天下-全國大專校院開源軟體程式創意設計競賽</a>，作品
+            <a href="三寶企劃書.pdf" target="_blank">三寶雷達企劃書</a>
+          </li>
+          <li>2018年07月27日-29日，
+            <a href="https://www.facebook.com/xrhackfest/" target="_blank">XR Hack Fest XR 開發者黑客松大賽</a>，作品
+            <a href="https://github.com/tsumikihuang/XRcompetition-vive" target="_blank">GitHub連結</a>
+          </li>
+          <li>2018年08月11日-12日，
+            <a href="https://rladiestaipei.github.io/2018_Kaggle/?fbclid=IwAR2goTfwqqX22sGCAcTkg8rKQdARn_1HzZYO6TlwE1mueebyifXQadWv_Vk"
+              target="_blank">R Ladies Taipei Kaggle 競賽</a>
+          </li>
+          <li>2018年12月21日，
+            <a href="http://tec.yzu.edu.tw/web/news/?method=detail&amp;aid=3517" target="_blank">VR/AR教育應用創作競賽</a>，作品
+            <a href="https://github.com/tsumikihuang/VR_YZU_JP_CLASS" target="_blank">GitHub連結</a>
+          </li>
+          <li>2018年03-04月，
+            <a href="http://scc.cilab.csie.ncu.edu.tw/index.php" target="_blank">全國大專校院軟體創作競賽</a>(
+            <a href="語言練習VR教室_企劃書.pdf" target="_blank">企畫書</a>、
+            <a href="系統需求書.pdf" target="_blank">系統需求書</a>、
+            <a href="http://scc.cilab.csie.ncu.edu.tw/uploads/2019/Certification/40081.pdf" target="_blank">參賽證明單</a>)
+          </li>
+          <h2>目前忙碌於</h2>
+          <li>2019年06月，
+              與中國醫藥大學協作之專案，將模組辨識指定好的復健動作傳回辨識結果，並在手機上呈現辨識資料等追蹤圖表。
+            </li>
+          <li>2019年07月，
+            <a href="https://www.facebook.com/TSGDF/" target="_blank">第二屆台灣學生遊戲開發者論壇TSGDF</a>，作品「魅影」
+          </li>
+          <li>2019年02-09月，
+              <a href="https://www.facebook.com/TSGDF/" target="_blank"></a>畢業專題製作，蒐集使用者在VR空間中的資訊，以Shader呈現，再做分析與應用。
+            </li>
+        </lu>
+      </div>
+    </section>
+
+
+    <!--**************************************************************************-->
+    <!--**************************************************************************-->
+    <!--**************************************************************************-->
+    <!--**************************************************************************-->
+    <!--**************************************************************************-->
+    <hr class="featurette-divider" id="works_filter">
+
+    <h1 class="mt-4 mb-3">作品列表</h1>
+    <h3>主要使用程式語言 C++ / C# / JAVA / JS / Python / Vue.js
+      <br/>接觸領域 WebGL / AR / VR / ML
+      <br/>使用工具 Unity / Electron / Android Studio / Xcode
+    </h3>
+    <p>從大學開始累積的作品，可多利用下方搜尋欄尋找關鍵字:)</p>
+    <input class="form-control" id="myInput" type="text" placeholder="搜尋..">
+    <br>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>製作日期</th>
+          <th>作品名稱</th>
+          <th>程式語言</th>
+          <th>實作環境、技術</th>
+          <th>作品概述</th>
+        </tr>
+      </thead>
+      <tbody id="myTable">
+        <tr>
+          <td>2018年</td>
+          <td>
+            <a href="https://github.com/tsumikihuang/VR_YZU_JP_CLASS" target="_blank">語言練習VR教室</a>
+          </td>
+          <td>C#</td>
+          <td>Unity、Cardboard，Google Cloud Speech Api</td>
+          <td>
+            <p>透過VR眼鏡，將使用者(以下稱為”學生”)帶入一個全外語的學習環境。讓語文系的老師設計不同關卡，同學們可以透過觀察周遭環境，用第一人稱視角闖關，並模擬真人對話，給予使用者最真實的體驗。達到身歷其境學習外語的成效。在技術方面，有別於傳統的360影片APP，我們將課程資訊以及影片皆部署於雲端，使得教學用軟體可以輕量化並可即時更新。</p>
+          </td>
+        </tr>
+        <tr>
+          <td>2018年12月</td>
+          <td>
+            <a href="javascript:alert('由於此作品有安全性考量，故暫時不開放公開下載。\n若想體驗，請聯絡我!')">FB自動發文互動工具</a>
+          </td>
+          <td>C#</td>
+          <td>Unity、FB API</td>
+          <td>與藝設系同學共同製作互動裝置。使用程式拍照後，可自動將照片上傳至特定FB粉絲專業。</td>
+        </tr>
+        <tr>
+          <td>2018年1月</td>
+          <td>
+            <a href="https://github.com/tsumikihuang/AR-Escape-Room-APP" target="_blank">AR密室逃脫APP</a>
+          </td>
+          <td>Java</td>
+          <td>Android Studio、Vuforia、Tango</td>
+          <td>是一個
+              玩密室逃脫的 Android APP 。 用手機，在特定場地 預設元智大學
+              1201A 教室 玩密室逃脫 。遊戲中設有 小關卡 必須到特定的位置 並 找出 特定物件
+              道具 來觸發 故事。</td>
+        </tr>
+        <tr>
+          <td>2018年7月</td>
+          <td>
+            <a href="https://github.com/tsumikihuang/XRcompetition-vive" target="_blank">XR開發者黑克松大賽作品</a>
+          </td>
+          <td>C#</td>
+          <td>Unity、HTC Vive</td>
+          <td>虛擬實境VR作品。參加XR Hack Fest / XR 開發者黑客松大賽的作品，一劇情故事體驗作品。以用九柑仔店為故事背景的VR作品(htc vive實作) </td>
+        </tr>
+        <tr>
+          <td>2019年1月</td>
+          <td>
+            <a href="https://github.com/tsumikihuang/AI-Car-ml-agents" target="_blank">AI Car</a>
+          </td>
+          <td>C#</td>
+          <td>Unity、ML-Agnets</td>
+          <td>使用深度強化學習PPO（Proximal Policy Optimization），在不同環境下AI操控車子前後和左右旋轉，抵達目標。</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <script>
+      $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+          var value = $(this).val().toLowerCase();
+          $("#myTable tr").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+      });
+    </script>
+
+    <hr class="featurette-divider" id="works_overview">
+
+    <!-- Portfolio Section -->
+    <h1 class="mt-4 mb-3" id="experience">作品集概覽</h1>
+
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="https://github.com/tsumikihuang/VR_YZU_JP_CLASS" target="_blank">
+            <img class="card-img-top" src="project1.png" alt="">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <div class="row">
+                <div class="col-sm-7">
+                  <a href="https://github.com/tsumikihuang/VR_YZU_JP_CLASS" target="_blank">語言練習VR教室</a>
+                </div>
+                <div class="col-sm-5" style="text-align:right;">
+                  <a href="https://github.com/tsumikihuang/VR_YZU_JP_CLASS" target="_blank" class="social-icons">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=LafIYAmSHQQ" target="_blank" class="social-icons">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+            </h4>
+            <p class="card-text">
+              <a href="https://play.google.com/store/apps/details?id=com.tsumikihuang.vrcourse" target="_blank">Google Play商店</a>
+              <br/>
+              <a href="VR教材發表本.pdf" target="_blank">課程教材範例</a>
+              <br/>
+              <a href="語言練習VR教室.pdf" target="_blank">作品介紹PDF</a>
+              </br>
+              校內計畫「落實教學創新及提升教學品質」之一專案
+              <br/>為提升日文系同學在口說方面的不足，製作"語言練習VR教室"，以VR沉浸式情境練習，加上Google語音評分機制，製造易學習語言的環境。
+              <br/>獲得校內競賽「VR/AR教育應用創作競賽」教學應用組-優等獎。
+              <br/>在Unity上用Google Cloud Speech Api、Cardboard實作
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="https://github.com/tsumikihuang/AI-Car-ml-agents" target="_blank">
+            <img class="card-img-top" src="project5.png" alt="">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <div class="row">
+                <div class="col-sm-7">
+                  <a href="https://github.com/tsumikihuang/AI-Car-ml-agents" target="_blank">AI Car</a>
+                </div>
+                <div class="col-sm-5" style="text-align:right;">
+                  <a href="https://github.com/tsumikihuang/AI-Car-ml-agents" target="_blank" class="social-icons">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=4A0SPcF6080" target="_blank" class="social-icons">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+            </h4>
+            <p class="card-text">
+              <a href="AI_CAR.pdf" target="_blank">作品介紹PDF</a>
+              </br>
+              使用深度強化學習PPO（Proximal Policy Optimization），在不同環境下AI操控車子前後和左右旋轉，抵達目標
+              <br/>在Unity上用ML-Agent實作
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="javascript:alert('由於此作品有安全性考量，故暫時不開放公開下載。\n若想體驗，請聯絡我!')">
+            <img class="card-img-top" src="project2.png" alt="">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <div class="row">
+                <div class="col-sm-7">
+                  <a href="javascript:alert('由於此作品有安全性考量，故暫時不開放公開下載。\n若想體驗，請聯絡我!')">FB自動發文互動工具</a>
+                </div>
+                <div class="col-sm-5" style="text-align:right;">
+                  <a href="javascript:alert('由於此作品有安全性考量，故暫時不開放公開下載。\n若想體驗，請聯絡我!')" target="_blank" class="social-icons">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=BJ0W6Ebb54Q" target="_blank" class="social-icons">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+            </h4>
+            <p class="card-text">與藝設系同學共同製作互動裝置。使用程式拍照後，可自動將照片上傳至特定FB粉絲專業。
+              <br/>在Unity上用FB API實作
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="https://github.com/tsumikihuang/AR-Escape-Room-APP" target="_blank">
+            <img class="card-img-top" src="project3.png" alt="">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <div class="row">
+                <div class="col-sm-7">
+                  <a href="https://github.com/tsumikihuang/AR-Escape-Room-APP" target="_blank">AR密室逃脫APP</a>
+                </div>
+                <div class="col-sm-5" style="text-align:right;">
+                  <a href="https://github.com/tsumikihuang/AR-Escape-Room-APP" target="_blank" class="social-icons">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=0McN7Ok0k30" target="_blank" class="social-icons">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+            </h4>
+            <p class="card-text">
+              <a href="密室逃脫.pdf" target="_blank">作品介紹PDF</a>
+              </br>
+              是一個
+              玩密室逃脫的 Android APP 。 用手機，在特定場地 預設元智大學
+              1201A 教室 玩密室逃脫 。遊戲中設有 小關卡 必須到特定的位置 並 找出 特定物件
+              道具 來觸發 故事。
+              <br/>在Android Studio上用Vuforia + Tango設備實作
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="https://github.com/tsumikihuang/XRcompetition-vive" target="_blank">
+            <img class="card-img-top" src="project4.png" alt="">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <div class="row">
+                <div class="col-sm-7">
+                  <a href="https://github.com/tsumikihuang/XRcompetition-vive" target="_blank">XR開發者黑克松大賽作品</a>
+                </div>
+                <div class="col-sm-5" style="text-align:right;">
+                  <a href="https://github.com/tsumikihuang/XRcompetition-vive" target="_blank" class="social-icons">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://youtu.be/0CYUBjRx638" target="_blank" class="social-icons">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+            </h4>
+            <p class="card-text">2018年7月27-29日
+              <br/>虛擬實境VR作品。參加XR Hack Fest / XR 開發者黑客松大賽的作品。
+              <br/>作品為以用九柑仔店為故事背景的一劇情故事體驗，在Unity上用HTC Vive實作
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="javascript:alert('很抱歉，教材尚未公開。\n可至下方標註FB粉專查看最新進度。')">
+            <img class="card-img-top" src="js_ppt.png" alt="">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="javascript:alert('很抱歉，教材尚未公開。\n可至下方標註FB粉專查看最新進度。')">JavaScript/Bootstrap教材</a>
+            </h4>
+            <p class="card-text">
+              <a href="JavaScript試教版.ppsx" target="_blank">JavaScript試教教材內容</a>
+              <a href="BS前導.pptx" target="_blank">BootStrap 試教教材內容</a>
+              </br>教育部推動大學程式教育計畫
+              <br/>我們團隊負責其中的Web分項，製作對象為非資訊科系大一新生的程式教材，供非資訊專長的大學老師們在課堂上使用。
+              <br/>
+              <a href="https://www.facebook.com/PLUS.university/">推動大學程式設計教學 FB粉專</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+    <script>
+  /*
+    <!-- Features Section -->
+    <div class="row">
+      <div class="col-lg-6">
+        <h2>Modern Business Features</h2>
+        <p>The Modern Business template by Start Bootstrap includes:</p>
+        <ul>
+          <li>
+            <strong>Bootstrap v4</strong>
+          </li>
+          <li>jQuery</li>
+          <li>Font Awesome</li>
+          <li>Working contact form with validation</li>
+          <li>Unstyled page elements for easy customization</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam
+          totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+      </div>
+      <div class="col-lg-6">
+        <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Call to Action Section -->
+    <div class="row mb-4">
+      <div class="col-md-8">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae
+          veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+      </div>
+      <div class="col-md-4">
+        <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
+      </div>
+    </div>
+    */
+    </script>
+  </div>
+  <!-- /.container -->
+
+  <div class="container marketing" id="awards">
+    <!-- START THE FEATURETTES -->
+    <hr class="featurette-divider">
+    <!--
+    <h1 class="mt-4 mb-3">獎狀/證書</h1>
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Coding Angels
+          <span class="text-muted">Azure Machine Learning Bootcamp</span>
+        </h2>
+        <p class="lead">2017年12月09日，第一次使用Azure ML studio，講師教我們將資料餵給Azure ML，如何透過不同的演算法得到最佳的預測結果，最後用R語言將成品輸出收尾，是一堂驚喜滿滿的課程。</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="./proof/pf_coding.jpg" class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">DigiGirlz
+          <span class="text-muted">IoT Workshop</span>
+        </h2>
+        <p class="lead">2018年12月08日，參加第一天的Azure IOT課程，用Azure IoT智慧物件部屬與資料應用-MXChip + IoT Central，體驗物聯網的應用實作。</p>
+      </div>
+      <div class="col-md-5">
+        <img src="./proof/pf_digigirl.jpg" class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+-->
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">VR/AR教育應用創作競賽
+          <span class="text-muted">優等獎</span>
+        </h2>
+        <p class="lead">2018年12月21日，參加校內競賽「VR/AR教育應用創作競賽」，作品「
+          <a href="https://github.com/tsumikihuang/VR_YZU_JP_CLASS" target="_blank">語言練習VR教室</a>」獲得教學應用組優等獎。</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="./proof/pf_VRJPcourse.jpg" class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">ERP軟體應用師-配銷模組
+          <span class="text-muted">認證</span>
+        </h2>
+        <p class="lead">「ERP軟體應用師」為企業在導入ERP系統後所需要的人才。其扮演企業內部不同的功能部門均有其對應的系統功能操作與諮詢的角色，因而產生相關ERP職能人才的需求。</p>
+      </div>
+      <div class="col-md-5">
+        <img src="./proof/pf_ERP.jpg" class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+      <div class="col-md-7 featurette order-md-2">
+        <h2 class="featurette-heading">SFLPT
+          <span class="text-muted">A2</span>
+        </h2>
+        <p class="lead">日文檢定測驗，A2為最高等級，相當於JLPT N4程度，日文生活對話沒問題。</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="./proof/pf_JPA2.jpg" class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">世大運志工
+          <span class="text-muted">感謝狀</span>
+        </h2>
+        <p class="lead">2017年8月擔任世大運志工，分派到不同區域，協助各項事務。</p>
+      </div>
+      <div class="col-md-5">
+        <img src="./proof/pf_sport.jpg" class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $("#change_btn").popover().click(function () {
+      gotcha = random_pop();
+      $(this).attr('data-original-title', gotcha[0]);
+      $(this).attr('data-content', gotcha[1]);
+    });
+
+  </script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
+</body>
+
+</html>
