@@ -17,6 +17,10 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <!--lightbox燈箱效果的CSS-->
+  <link href="https://www.jqueryscript.net/demo/Responsive-Touch-enabled-jQuery-Image-Lightbox-Plugin/dist/simple-lightbox.min.css" rel='stylesheet' type='text/css'>
+  
   <!--
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
     crossorigin="anonymous">
@@ -55,6 +59,30 @@
     .monBouton::before {
       background-image: url("dog(small).png");
     }
+	/*************************************************************************/
+	.PitureWall {
+	  margin: 0;
+		padding: 0;
+	}
+	.zoomwall {
+		font-size: 0;
+		overflow: hidden;
+	}
+	.zoomwall img {
+		height: 15vw;
+		opacity: 1;
+		vertical-align: top;
+		transform-origin: 0% 0%;
+		transition-property: transform, opacity;
+		transition-duration: 0.3s;
+		transition-timing-function: ease-out;
+		-webkit-transform-origin: 0% 0%;
+		-webkit-transition-property: transform, opacity;
+		-webkit-transition-duration: 0.3s;
+		-webkit-transition-timing-function: ease-out;
+		outline:3px solid #000;
+		margin-bottom: 3px;
+	}
   </style>
   <script>
     function random_pop() {
@@ -165,6 +193,9 @@
         
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#awards">獎狀/證書</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#picture">活動照片</a>
         </li>
       </ul>
     </div>
@@ -1062,7 +1093,38 @@
         <img src="./proof/pf_sport.jpg" class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
       </div>
     </div>-->
+	
+	    <hr class="featurette-divider">
+
   </div>
+  
+      <h1 class="mt-4 mb-3" id="picture">活動照片</h1>
+
+  <div class="PitureWall" class="container">
+    <div id="zoomwall" class="zoomwall gallery">
+    <a href="./picture/pic.jpg"><img src="./picture/pic.jpg"/></a>
+    <a href="./picture/pic2.jpg"><img src="./picture/pic2.jpg"/></a>
+    <a href="./picture/pic3.jpg"><img src="./picture/pic3.jpg"/></a>
+    <a href="./picture/pic4.jpg"><img src="./picture/pic4.jpg"/></a>
+    <a href="./picture/pic5.jpg"><img src="./picture/pic5.jpg"/></a>
+    <a href="./picture/pic6.jpg"><img src="./picture/pic6.jpg"/></a>
+    <a href="./picture/p1.jpg"><img src="./picture/p1.jpg"/></a>
+    <a href="./picture/p2.jpg"><img src="./picture/p2.jpg"/></a>
+    <a href="./picture/p3.jpg"><img src="./picture/p3.jpg"/></a>
+    <a href="./picture/p4.jpg"><img src="./picture/p4.jpg"/></a>
+    <a href="./picture/p5.jpg"><img src="./picture/p5.jpg"/></a>
+    <a href="./picture/p6.jpg"><img src="./picture/p6.jpg"/></a>
+    <a href="./picture/p7.jpg"><img src="./picture/p7.jpg"/></a>
+    <a href="./picture/p8.jpg"><img src="./picture/p8.jpg"/></a>
+    <a href="./picture/p9.jpg"><img src="./picture/p9.jpg"/></a>
+    <a href="./picture/p10.jpg"><img src="./picture/p10.jpg"/></a>
+    <a href="./picture/p11.jpg"><img src="./picture/p11.jpg"/></a>
+    <a href="./picture/p12.jpg"><img src="./picture/p12.jpg"/></a>
+    <a href="./picture/p13.png"><img src="./picture/p13.png"/></a>
+    <a href="./picture/p14.png"><img src="./picture/p14.png"/></a>
+    <a href="./picture/p15.jpg"><img src="./picture/p15.jpg"/></a>
+    </div>
+</div>
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
@@ -1071,6 +1133,12 @@
     </div>
     <!-- /.container -->
   </footer>
+  
+  
+  
+	
+	
+	
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1087,6 +1155,67 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
+
+  
+  
+  
+  <!--jquery、lightbox元件與程式碼-->
+<script src="https://www.jqueryscript.net/demo/Responsive-Touch-enabled-jQuery-Image-Lightbox-Plugin/dist/simple-lightbox.jquery.min.js"></script>
+<script>
+window.onload = function() {
+	create($("#zoomwall"));
+
+	function create(blocks){
+		resize(blocks.children().children());
+	}
+
+	function resize(blocks){
+		var row = [];
+    var top = -1;
+
+    for (var c = 0; c < blocks.length; c++) {
+      var block = blocks[c];
+      if (block) {
+        if (top == -1) {
+          top = block.offsetTop;
+
+        } else if (block.offsetTop != top) {
+          resizeRow(row, calcRowWidth(row));
+
+          row = [];
+          top = block.offsetTop;
+        }
+
+        row.push(block);
+
+      }
+  	}
+  	resizeRow(row, calcRowWidth(row));
+	}
+
+	function resizeRow(row, width){
+		//console.log(row[].naturalWidth);
+		if (row && row.length > 1) {
+    	for (var i in row) {
+      	row[i].style.width = (parseInt(window.getComputedStyle(row[i]).width, 10) / width * 100) + '%';
+      	row[i].style.height = 'auto';
+    	}
+  	}
+	}
+
+	function calcRowWidth(row){
+		var width = 0;
+
+  	for (var i in row) {
+    	width += parseInt(window.getComputedStyle(row[i]).width, 10);
+  	}
+    return width;
+	}
+};
+	$(function(){
+		var gallery = $('.gallery a').simpleLightbox({navText:    ['&lsaquo;','&rsaquo;']});
+	});
+</script>
 
 </body>
 
